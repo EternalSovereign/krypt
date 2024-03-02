@@ -110,7 +110,6 @@ export const TransactionProvider = ({ children }) => {
                     amount: ethers.utils.formatEther(transaction.amount),
                 })
             );
-            console.log(structuredTransactions);
             setTransactions(structuredTransactions);
         } catch (error) {
             console.log(error);
